@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+/* Header */
+header {
+	background-color: #89b8b8;
+	color: #333;
+	padding: 20px;
+	text-align: center;
+	font-size: 24px;
+}
+
+header h3 {
+	margin-bottom: 10px;
+}
+
+header h6 {
+	margin-top: 10px;
+}
+
+/* barra de navegação */
+nav {
+	background-color: #333;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+	margin: 0 10px;
+	transition: color 0.3s ease;
+}
+
+nav a:hover {
+	color: #ffcc00;
+}
+
+/* div */
+.conteudo {
+	background-color: #f0f0f0;
+	padding: 20px;
+	border: 2px solid #ccc;
+	border-radius: 10px;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+	margin: 50px auto;
+	max-width: 50%;
+}
+
+/* título*/
+.conteudo h3 {
+	margin-bottom: 10px; 
+	color: #333;
+	font-size: 24px;
+	text-align: center;
+}
+
+/* parágrafo */
+.conteudo p {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	color: #333;
+}
+
+/* formulário */
+.conteudo form {
+	margin-top: 20px;
+}
+
+/* campos de entrada */
+.conteudo input, 
+.conteudo textarea {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-sizing: border-box;
+}
+
+/*  botão de envio */
+.conteudo input[type="submit"] {
+	background-color: #333;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.conteudo input[type="submit"]:hover {
+	background-color: #555;
+}
+
+ /* footer */
+ footer {
+	text-align: center;
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	position: absolute;
+	bottom: 0;
+	width: 100%; 
+}
+
+/* lista formação */  
+.formacoes {
+	list-style-type: none;
+	padding: 0;
+}
+.formacoes li {
+	margin-bottom: 10px;
+	padding: 10px;
+	background-color: #f9f9f9;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+}

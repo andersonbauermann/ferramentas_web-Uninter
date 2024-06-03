@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Anderson Bauermann - Uninter</title>
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+		<script>
+			function showAlert(event) {
+				event.preventDefault();
+				var nome = document.querySelector('input[name="nome"]').value;
+				var email = document.querySelector('input[name="email"]').value;
+				var mensagem = document.querySelector('textarea[name="mensagem"]').value;
+
+				if (nome && email && mensagem) {
+					alert("Mensagem enviada com sucesso!");
+					window.location.href = "index.html";
+				} else {
+					alert("Por favor, preencha todos os campos.");
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<header>
+			<h3>Anderson Bauermann</h3>
+			<h6>Trabalho Web Uninter</h6>
+		</header>
+		<!--Barra de navegação-->
+		<nav>
+			<a href="index.html">Sobre</a>
+			<a href="formacao.html">Formação</a>
+			<a href="contato.html">Contato</a>
+			<a href="https://github.com/andersonbauermann">GitHub</a>
+		</nav>
+		<!--Conteudo-->
+		<div class="conteudo">
+			<h3>Entre em Contato</h3>
+			<form>
+				<input type="text" name="nome" placeholder="Seu Nome" required>
+				<input type="email" name="email" placeholder="Seu Email" required>
+				<textarea name="mensagem" placeholder="Sua Mensagem" rows="5" required></textarea>
+				<input type="submit" value="Enviar" onclick="showAlert(event)">
+			</form>
+		</div>
+		<!--footer-->
+		<footer>
+			&copy; 2024 Anderson Bauermann - Uninter
+		</footer>
+	</body>
+</html>
